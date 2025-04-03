@@ -5,44 +5,82 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Моя расширенная HTML-страница</title>
 </head>
-<body>
-    <h1>Заголовок страницы</h1>
-    <h2>Подзаголовок</h2>
+<body style="font-family: Arial, sans-serif; background-color: #f4f4f4; margin: 20px; padding: 20px;">
 
-    <p>Это пример параграфа с <b>жирным</b>, <i>курсивным</i> и <u>подчеркнутым</u> текстом.</p>
-    <p>Перенос строки: <br>Вот новый текст на новой строке.</p>
+    <h1 style="color: darkblue; text-align: center;">Заголовок страницы</h1>
+    <h2 style="color: darkred; text-decoration: underline;">Подзаголовок</h2>
 
-    <ul>
+    <p style="color: #333; font-size: 18px; line-height: 1.6;">
+        Это пример параграфа с <b style="color: green;">жирным</b>, 
+        <i style="color: purple;">курсивным</i> и 
+        <u style="color: orange;">подчеркнутым</u> текстом.
+    </p>
+
+    <p style="font-size: 16px; font-style: italic; background-color: #ddd; padding: 5px;">
+        Перенос строки: <br>Вот новый текст на новой строке.
+    </p>
+
+    <ul style="list-style-type: square; font-size: 18px;">
         <li>Пункт списка 1</li>
         <li>Пункт списка 2</li>
     </ul>
 
-    <ol>
+    <ol style="list-style-type: decimal; font-size: 18px;">
         <li>Пункт упорядоченного списка 1</li>
         <li>Пункт упорядоченного списка 2</li>
     </ol>
 
-    <table border="1">
-        <tr>
-            <th>Товар</th>
-            <th>Количество</th>
+    <table border="1" style="width: 50%; text-align: center; border-collapse: collapse; background-color: white;">
+        <tr style="background-color: lightgray;">
+            <th style="padding: 8px;">Товар</th>
+            <th style="padding: 8px;">Количество</th>
         </tr>
         <tr>
-            <td>Яблоки</td>
-            <td>10</td>
+            <td style="padding: 8px;">Яблоки</td>
+            <td style="padding: 8px;">10</td>
         </tr>
         <tr>
-            <td>Апельсины</td>
-            <td>5</td>
+            <td style="padding: 8px;">Апельсины</td>
+            <td style="padding: 8px;">5</td>
         </tr>
     </table>
 
-    <a href="https://www.google.com/search?sca_esv=1ae9f50945506fbf&q=%D1%8F%D0%B1%D0%BB%D0%BE%D0%BA%D0%B8&udm=2&fbs=ABzOT_CqS0a0CI6-aUHZtOc_pwPdN2gnODRNb8eCGKMFcOcz_z-S1FjopVWR_jg0TXtrD_VRl9YtOTTNKRc2i3mYVM69JoymQx33-jdbbVNOuWtgxRp8BIWXMy1-SGOEO9wtzdxmG7nlHqZ645MBPJ7awKlDlpK4fKMuEJS42xI8KPH_jtA85wFvI3E5Z-bJJGzJQZhrO1AHG5Y2DRiHPfD3KxutLTO5KqosiDXycDJe-Bsi60xkmPI&sa=X&ved=2ahUKEwiClKimkc-LAxXHYPEDHe-3F40QtKgLegQIEBAB&biw=1920&bih=927&dpr=1#vhid=vILC-mFJHyMBEM&vssid=mosaic" target="blank">Ссылка на Google картинки</a>
+    <br>
 
-    <img src="https://via.placeholder.com/150" alt="Пример изображения">
+    <div style="display: flex; justify-content: space-around; background: white; padding: 10px; border-radius: 10px;">
+        <div style="width: 100px; height: 100px; background-color: lightblue; display: flex; align-items: center; justify-content: center; border: 2px solid blue;">
+            Блок 1
+        </div>
+        <div style="width: 100px; height: 100px; background-color: lightgreen; display: flex; align-items: center; justify-content: center; border: 2px solid green;">
+            Блок 2
+        </div>
+        <div style="width: 100px; height: 100px; background-color: lightcoral; display: flex; align-items: center; justify-content: center; border: 2px solid red;">
+            Блок 3
+        </div>
+    </div>
 
-    <a href="https://www.google.com/search?sca_esv=1ae9f50945506fbf&q=%D0%B0%D0%BF%D0%B5%D0%BB%D1%8C%D1%81%D0%B8%D0%BD%D1%8B&udm=2&fbs=ABzOT_AHLnYhFSu_Ge6fmXjh0ObnWwYmLJu8FLlBMIcpIglRjEyYytCStdR46T96xfp2ni4rVj15nmwb9wFLrhFHHiqa2ruzkrKHLRijTFdn3U-4iIoGwkYcX_s2Pq3dPvkrw_fB3rX1rWDIBMuOTmKqjJpynWkUZyYAmXmsLsyUT-3uupZGSQdncfYEXGkdsxjQr6a164drKRzFzrgDvDlmPqXBnJAGA4FDSmHN1N99SWLZugZaSww&sa=X&ved=2ahUKEwiSzqTYlM-LAxU6VPEDHZIFNicQtKgLegQIHRAB&biw=1920&bih=927&dpr=1#vhid=TNDWu1WfSYWHcM&vssid=mosaic" target="blank">Ссылка на Google картинки</a>
+    <br>
 
-    <img src="https://via.placeholder.com/150" alt="Пример изображения">
+    <a href="https://www.google.com/search?q=яблоки" target="_blank" 
+       style="color: blue; font-weight: bold; text-decoration: none; font-size: 18px;">
+        Ссылка на Google картинки (Яблоки)
+    </a>
+
+    <br><br>
+
+    <img src="https://via.placeholder.com/150" alt="Пример изображения" 
+         style="border-radius: 10px; box-shadow: 5px 5px 15px gray;">
+
+    <br><br>
+
+    <a href="https://www.google.com/search?q=апельсины" target="_blank" 
+       style="color: red; font-weight: bold; text-decoration: none; font-size: 18px;">
+        Ссылка на Google картинки (Апельсины)
+    </a>
+
+    <br><br>
+
+    <img src="https://via.placeholder.com/150" alt="Пример изображения" 
+         style="border-radius: 10px; box-shadow: 5px 5px 15px gray;">
 </body>
 </html>
