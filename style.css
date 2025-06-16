@@ -56,7 +56,7 @@ a[target="_blank"] {
 .item2 { background-color: lightgreen; }
 .item3 { background-color: lightcoral; }
 
-/* Grid */
+
 .grid-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -72,7 +72,7 @@ a[target="_blank"] {
     text-align: center;
 }
 
-/* Анимация */
+
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -84,7 +84,7 @@ a[target="_blank"] {
     }
 }
 
-/* Медиазапрос для адаптивности */
+
 @media (max-width: 768px) {
     #main-title {
         font-size: 24px;
@@ -96,4 +96,34 @@ a[target="_blank"] {
     .grid-container {
         grid-template-columns: 1fr;
     }
+}
+
+.carousel-container {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.carousel-image {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    border-radius: 5px;
+}
+
+.carousel-image.active {
+    opacity: 1;
+    position: relative;
+}
+
+.carousel-container:hover {
+    animation: scale 0.3s linear 1 alternate both;
 }
