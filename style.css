@@ -1,56 +1,99 @@
-/* Селектор по тегу */
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
-    margin: 20px;
-    padding: 20px;
+    margin: 0;
+    padding: 0;
 }
 
-/* Селектор по ID */
 #main-title {
     color: darkblue;
     text-align: center;
+    padding: 20px;
 }
 
-/* Селектор по классу */
 .subtitle {
     color: darkred;
     text-decoration: underline;
+    text-align: center;
+    margin-bottom: 10px;
 }
 
-/* Селектор по вложенности */
 ul li {
     font-size: 18px;
     color: #333;
 }
 
-/* Селектор по атрибуту */
 a[target="_blank"] {
     color: blue;
     font-weight: bold;
     text-decoration: none;
 }
 
-/* Flex контейнер */
+/* Flex */
 .flex-container {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px;
     background: white;
     padding: 10px;
     border-radius: 10px;
 }
 
 .flex-item {
-    width: 100px;
+    width: 150px;
     height: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
     color: #fff;
     font-size: 18px;
-    border: 2px solid #333;
+    border-radius: 8px;
+    animation: fadeIn 2s ease forwards;
 }
 
-.item1 { background-color: lightblue; border-color: blue; }
-.item2 { background-color: lightgreen; border-color: green; }
-.item3 { background-color: lightcoral; border-color: red; }
+.item1 { background-color: lightblue; }
+.item2 { background-color: lightgreen; }
+.item3 { background-color: lightcoral; }
+
+/* Grid */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+    padding: 0 20px 20px;
+}
+
+.grid-item {
+    background-color: #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Анимация */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Медиазапрос для адаптивности */
+@media (max-width: 768px) {
+    #main-title {
+        font-size: 24px;
+    }
+    .flex-item {
+        width: 100%;
+        height: auto;
+    }
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
