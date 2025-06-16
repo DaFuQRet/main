@@ -127,3 +127,7 @@ a[target="_blank"] {
 .carousel-container:hover {
     animation: scale 0.3s linear 1 alternate both;
 }
+
+input.error {
+	border: 2px solid red;
+}

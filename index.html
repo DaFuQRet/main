@@ -1,28 +1,44 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Карусель с продуктами</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <header>
-            <h1 class="title">Продукты</h1>
-        </header>
-        <section class="grid-container">
-            <div id="flex-container" class="content">
-                <p class="intro-text">
-                    Овощи — важный элемент здорового питания. В них мало жиров и нет холестерина.<br>
-                    Фрукты также являются важным элементом здорового питания. В них содержатся пищевые и биологически активные вещества (калий, пищевые волокна, витамин С, фолат и другие), необходимые для поддержания здоровья и снижающие риск развития некоторых хронических заболеваний<br>
-                    Морепродукты способствуют повышению защитных сил и энергетического потенциала организма, снижению риска развития анемии и йододефицитных состояний.<br>
-                </p>
-                <ul class="list">
-                    <li><i>Обязательно добавлять в рацион</i>, <b>комбинировать<b> и <u>уметь готовить<u>
-                </ul>
-            </div>
-            <div id="carousel-container" class="image-container"></div>
-            <script src="carousel.js"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Карусель с продуктами</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="title">Продукты</h1>
+    </header>
+
+    <section class="grid-container">
+      <div id="flex-container" class="content">
+        <p class="intro-text">
+          Овощи — важный элемент здорового питания. В них мало жиров и нет холестерина.<br />
+          Фрукты также являются важным элементом здорового питания. В них содержатся пищевые и биологически активные вещества (калий, пищевые волокна, витамин С, фолат и другие), необходимые для поддержания здоровья и снижающие риск развития некоторых хронических заболеваний.<br />
+          Морепродукты способствуют повышению защитных сил и энергетического потенциала организма, снижению риска развития анемии и йододефицитных состояний.<br />
+        </p>
+        <ul class="list">
+          <li><i>Обязательно добавлять в рацион</i>, <b>комбинировать</b> и <u>уметь готовить</u></li>
+        </ul>
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <span class="error-message" id="name-error"></span>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <span class="error-message" id="email-error"></span>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                    <span class="error-message" id="password-error"></span>
+                </div>
+                <button type="submit">Enlist Now</button>
+            </form>
+            <script src="index.js"></script>
             <script>
             const imgUrls = [
                 "image.png",
