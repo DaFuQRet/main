@@ -1,0 +1,56 @@
+/* Селектор по тегу */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 20px;
+    padding: 20px;
+}
+
+/* Селектор по ID */
+#main-title {
+    color: darkblue;
+    text-align: center;
+}
+
+/* Селектор по классу */
+.subtitle {
+    color: darkred;
+    text-decoration: underline;
+}
+
+/* Селектор по вложенности */
+ul li {
+    font-size: 18px;
+    color: #333;
+}
+
+/* Селектор по атрибуту */
+a[target="_blank"] {
+    color: blue;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Flex контейнер */
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.flex-item {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 18px;
+    border: 2px solid #333;
+}
+
+.item1 { background-color: lightblue; border-color: blue; }
+.item2 { background-color: lightgreen; border-color: green; }
+.item3 { background-color: lightcoral; border-color: red; }

@@ -4,28 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Моя расширенная HTML-страница</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body style="font-family: Arial, sans-serif; background-color: #f4f4f4; margin: 20px; padding: 20px;">
+<body>
+    <h1 id="main-title">Заголовок страницы</h1>
+    <h2 class="subtitle">Подзаголовок</h2>
 
-    <h1 style="color: darkblue; text-align: center;">Заголовок страницы</h1>
-    <h2 style="color: darkred; text-decoration: underline;">Подзаголовок</h2>
+    <p>Это пример параграфа с <b>жирным</b>, <i>курсивным</i> и <u>подчеркнутым</u> текстом.</p>
 
-    <p style="color: #333; font-size: 18px; line-height: 1.6;">
-        Это пример параграфа с <b style="color: green;">жирным</b>, 
-        <i style="color: purple;">курсивным</i> и 
-        <u style="color: orange;">подчеркнутым</u> текстом.
-    </p>
+    <p>Перенос строки: <br>Вот новый текст на новой строке.</p>
 
-    <p style="font-size: 16px; font-style: italic; background-color: #ddd; padding: 5px;">
-        Перенос строки: <br>Вот новый текст на новой строке.
-    </p>
-
-    <ul style="list-style-type: square; font-size: 18px;">
+    <ul>
         <li>Пункт списка 1</li>
         <li>Пункт списка 2</li>
     </ul>
 
-    <ol style="list-style-type: decimal; font-size: 18px;">
+    <ol>
         <li>Пункт упорядоченного списка 1</li>
         <li>Пункт упорядоченного списка 2</li>
     </ol>
@@ -47,24 +41,15 @@
 
     <br>
 
-    <div style="display: flex; justify-content: space-around; background: white; padding: 10px; border-radius: 10px;">
-        <div style="width: 100px; height: 100px; background-color: lightblue; display: flex; align-items: center; justify-content: center; border: 2px solid blue;">
-            Блок 1
-        </div>
-        <div style="width: 100px; height: 100px; background-color: lightgreen; display: flex; align-items: center; justify-content: center; border: 2px solid green;">
-            Блок 2
-        </div>
-        <div style="width: 100px; height: 100px; background-color: lightcoral; display: flex; align-items: center; justify-content: center; border: 2px solid red;">
-            Блок 3
-        </div>
+    <div class="flex-container">
+        <div class="flex-item item1">Блок 1</div>
+        <div class="flex-item item2">Блок 2</div>
+        <div class="flex-item item3">Блок 3</div>
     </div>
 
     <br>
 
-    <a href="https://www.google.com/search?q=яблоки" target="_blank" 
-       style="color: blue; font-weight: bold; text-decoration: none; font-size: 18px;">
-        Ссылка на Google картинки (Яблоки)
-    </a>
+    <a href="https://www.google.com/search?q=яблоки" target="_blank">Ссылка на Google картинки (Яблоки)</a>
 
     <br><br>
 
@@ -73,10 +58,7 @@
 
     <br><br>
 
-    <a href="https://www.google.com/search?q=апельсины" target="_blank" 
-       style="color: red; font-weight: bold; text-decoration: none; font-size: 18px;">
-        Ссылка на Google картинки (Апельсины)
-    </a>
+    <a href="https://www.google.com/search?q=апельсины" target="_blank">Ссылка на Google картинки (Апельсины)</a>
 
     <br><br>
 
