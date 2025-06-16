@@ -1,75 +1,37 @@
 <!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Моя расширенная HTML-страница</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <h1 id="main-title">Заголовок страницы</h1>
-    <h2 class="subtitle">Подзаголовок</h2>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Карусель с продуктами</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <h1 class="title">Продукты</h1>
+        </header>
+        <section class="grid-container">
+            <div id="flex-container" class="content">
+                <p class="intro-text">
+                    Овощи — важный элемент здорового питания. В них мало жиров и нет холестерина.<br>
+                    Фрукты также являются важным элементом здорового питания. В них содержатся пищевые и биологически активные вещества (калий, пищевые волокна, витамин С, фолат и другие), необходимые для поддержания здоровья и снижающие риск развития некоторых хронических заболеваний<br>
+                    Морепродукты способствуют повышению защитных сил и энергетического потенциала организма, снижению риска развития анемии и йододефицитных состояний.<br>
+                </p>
+                <ul class="list">
+                    <li><i>Обязательно добавлять в рацион</i>, <b>комбинировать<b> и <u>уметь готовить<u>
+                </ul>
+            </div>
+            <div id="carousel-container" class="image-container"></div>
+            <script src="carousel.js"></script>
+            <script>
+            const imgUrls = [
+                "image.png",
+                "image2.jpg",
+                "image3.webp"
+            ];
 
-    <p>Это пример параграфа с <b>жирным</b>, <i>курсивным</i> и <u>подчеркнутым</u> текстом.</p>
-
-    <p>Перенос строки: <br>Вот новый текст на новой строке.</p>
-
-    <ul>
-        <li>Пункт списка 1</li>
-        <li>Пункт списка 2</li>
-    </ul>
-
-    <ol>
-        <li>Пункт упорядоченного списка 1</li>
-        <li>Пункт упорядоченного списка 2</li>
-    </ol>
-
-    <table border="1" style="width: 50%; text-align: center; border-collapse: collapse; background-color: white;">
-        <tr style="background-color: lightgray;">
-            <th style="padding: 8px;">Товар</th>
-            <th style="padding: 8px;">Количество</th>
-        </tr>
-        <tr>
-            <td style="padding: 8px;">Яблоки</td>
-            <td style="padding: 8px;">10</td>
-        </tr>
-        <tr>
-            <td style="padding: 8px;">Апельсины</td>
-            <td style="padding: 8px;">5</td>
-        </tr>
-    </table>
-
-    <br>
-
-    <div class="flex-container">
-        <div class="flex-item item1">Блок 1</div>
-        <div class="flex-item item2">Блок 2</div>
-        <div class="flex-item item3">Блок 3</div>
-    </div>
-
-    <br>
-
-    <a href="https://www.google.com/search?q=яблоки" target="_blank">Ссылка на Google картинки (Яблоки)</a>
-
-    <br><br>
-
-    <img src="https://via.placeholder.com/150" alt="Пример изображения">
-
-    <br><br>
-
-    <a href="https://www.google.com/search?q=апельсины" target="_blank">Ссылка на Google картинки (Апельсины)</a>
-
-    <br><br>
-
-    <img src="https://via.placeholder.com/150" alt="Пример изображения">
-
-    <br><br>
-
-    <div class="grid-container">
-        <div class="grid-item">Грид элемент 1</div>
-        <div class="grid-item">Грид элемент 2</div>
-        <div class="grid-item">Грид элемент 3</div>
-        <div class="grid-item">Грид элемент 4</div>
-    </div>
-</body>
+            createCarousel(imgUrls, "#carousel-container");
+            </script>
+        </section>
+    </body>
 </html>
